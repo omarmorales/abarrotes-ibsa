@@ -47,7 +47,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Brand Logo -->
         <a href="index3.html" class="brand-link">
           <img src="./img/warehouse.png" alt="MosaDev Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-          <span class="brand-text font-weight-light">MosaDev</span>
+          <span class="brand-text font-weight-light">IBSA</span>
         </a>
 
         <!-- Sidebar -->
@@ -58,9 +58,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <img src="./img/man.png" alt="User Image">
             </div>
             <div class="info">
-              <router-link to="/profile" class="d-block">
-                Omar Morales
-              </router-link>
+              <a href="#" class="d-block">
+                {{ Auth::user()->name }}
+              </a>
             </div>
           </div>
 
@@ -140,6 +140,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Main content -->
         <div class="content">
           <div class="container-fluid">
+            <router-view></router-view>
           </div><!-- /.container-fluid -->
         </div>
         <!-- /.content -->
